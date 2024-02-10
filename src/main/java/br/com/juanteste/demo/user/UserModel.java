@@ -1,28 +1,15 @@
 package br.com.juanteste.demo.user;
 
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
+@Data
 public class UserModel {
+  
   private String username;
+  @Getter
+  @Setter
   private String name;
   private String password;
-
-  public void setUsername(String username) {
-    this.username = username;
-  }
-  public String getUsername() {
-    return username;
-  }
-  
-  public void setName(String name) {
-    this.name = name;
-  }
-  public String getName() {
-    return name;
-  }
-
-  public void setPassword(String password) {
-    this.password = password;
-  }
-  public String getPassword() {
-    return password;
-  }
 }
